@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import DrawerNav from './DrawerNavigation';
 import Login from '../screens/Login';
+import LoginContainer from '../screens/Login/LoginContainer';
 
 const LoginSwich = createStackNavigator();
 const Navigator = () => {
@@ -20,7 +21,7 @@ const Navigator = () => {
             />
             <LoginSwich.Screen
                 name="SignIn"
-                component={Login}
+                component={LoginContainer}
             />
         </LoginSwich.Navigator>
     );

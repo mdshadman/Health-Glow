@@ -5,7 +5,7 @@ const ProductDetails = () => {
     return (
         <View>
             <Text>
-                {"Product details"}
+                {"Product details coming soon"}
             </Text>
         </View>
     );

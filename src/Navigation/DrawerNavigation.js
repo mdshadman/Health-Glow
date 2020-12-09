@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import AppStack from './AppNavigation';
-import CustomSideBar from '../components/CustomHeader/CustomDrawer/CustomSideBar';
+import CustomSideBar from "../components/CustomDrawer/CustomSideBar";
 
 const Drawer = createDrawerNavigator();
 
@@ -21,11 +21,6 @@ const DrawerNav = () => {
                     headerTitleAlign: 'center'
                 }}
             />
-            {/* <Drawer.Screen
-                name="Server Setting"
-                component={ServerSettingScreen}
-                options={{ title: 'Server Setting' }}
-            /> */}
         </Drawer.Navigator>
     );
 

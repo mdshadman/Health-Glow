@@ -1,21 +1,13 @@
 import 'react-native-gesture-handler';
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
 import React, { Component } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import Navigator from './src/Navigation/Auth';
 import { applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from "react-redux";
+import rootReducer from './src/redux/rootReducer';
 
-const store = createStore(
-  applyMiddleware(thunk)
-);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 class App extends Component {
   constructor(props) {
     super(props);

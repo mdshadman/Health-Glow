@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import ProductsScreen from '../screens/ProductsScreen';
 import ProductDetails from '../screens/ProductDetails';
+import ProductsScreen from '../screens/Products/ProductsView';
 
 const AuthNav = createStackNavigator();
 const AppStack = () => {
@@ -9,7 +9,7 @@ const AppStack = () => {
         <AuthNav.Navigator
             initialRouteName="Products"
             screenOptions={{
-                headerShown: true,
+                headerShown: false,
                 title: 'Centered',
                 headerTitleAlign: 'center'
             }}
