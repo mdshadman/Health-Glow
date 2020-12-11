@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     listItem: {
         height: 56,
-        backgroundColor: '#36301A',
+        backgroundColor: 'orange',
         marginBottom: 4,
         justifyContent: 'center',
         alignItems: 'flex-start'
@@ -14,14 +14,21 @@ const styles = StyleSheet.create({
         paddingLeft: 16,
         color: '#fff'
     },
-
-
     listWithIcon: {
         paddingLeft: 16,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center'
     },
-    fullScreen: { flex: 1 }
+    fullScreen: { flex: 1 },
+    logoStyle: {
+        width: '100%',
+        // height: 48
+    },
+    drawerHeader: {
+        paddingTop: Platform.OS === "ios" ? 32 : 0,
+        backgroundColor: '#fff',
+        // paddingVertical: 16
+    }
 })
 export default styles;

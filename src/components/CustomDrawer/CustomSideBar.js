@@ -31,7 +31,9 @@ class CustomSideBar extends Component {
     render() {
         return (
             <View style={Styles.fullScreen}>
-                <View style={{ paddingTop: 32, backgroundColor: '#36301A' }} />
+                <View style={Styles.drawerHeader} >
+                    <Image source={require("../../images/logoHealth.png")} style={Styles.logoStyle} resizeMode={"contain"} />
+                </View>
                 <FlatList
                     data={navigationData}
                     renderItem={({ item }) => this.renderItem(item)}

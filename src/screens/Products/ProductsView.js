@@ -58,9 +58,8 @@ const ProductsScreen = ({
             setActionvisible(!actionVisible);
             setIsDataFilter(false)
         } else {
-            Alert.alert("Something went weong !", "Can not sort this product, please try again later.")
+            Alert.alert(" OOps Something went wrong !", "Can not sort this product, please try again later.")
         }
-
     }
     const receivedCategory = (val) => {
     }
